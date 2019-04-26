@@ -7,7 +7,7 @@ const extensions = [
   '.js', '.jsx', '.ts', '.tsx',
 ];
 
-const name = 'RollupTypeScriptBabel';
+const name = 'CrossIframeAndWindow';
 
 export default {
   input: './src/index.ts',
@@ -30,6 +30,7 @@ export default {
   output: [{
     file: pkg.main,
     format: 'cjs',
+    exports: "named"
   }, {
     file: pkg.module,
     format: 'es',

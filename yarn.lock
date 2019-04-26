@@ -642,10 +642,17 @@
   resolved "http://registry.npm.taobao.org/@types/estree/download/@types/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha1-4Xfmme4bjCLSMXTKqnQiZEOJUJ8=
 
-"@types/node@^11.9.5":
-  version "11.11.6"
-  resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
-  integrity sha1-35KdG7Lu5a/dpZikGTD+ULQ+qmo=
+"@types/node@*", "@types/node@^11.13.5":
+  version "11.13.7"
+  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-11.13.7.tgz#85dbb71c510442d00c0631f99dae957ce44fd104"
+  integrity sha1-hdu3HFEEQtAMBjH5na6VfORP0QQ=
+
+"@types/resolve@0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npm.taobao.org/@types/resolve/download/@types/resolve-0.0.8.tgz#f26074d238e02659e323ce1a13d041eee280e194"
+  integrity sha1-8mB00jjgJlnjI84aE9BB7uKA4ZQ=
+  dependencies:
+    "@types/node" "*"
 
 acorn@^6.1.1:
   version "6.1.1"
@@ -740,10 +747,10 @@ browserslist@^4.4.2, browserslist@^4.5.1:
     electron-to-chromium "^1.3.116"
     node-releases "^1.1.11"
 
-builtin-modules@^3.0.0:
-  version "3.0.0"
-  resolved "http://registry.npm.taobao.org/builtin-modules/download/builtin-modules-3.0.0.tgz#1e587d44b006620d90286cc7a9238bbc6129cab1"
-  integrity sha1-Hlh9RLAGYg2QKGzHqSOLvGEpyrE=
+builtin-modules@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/builtin-modules/download/builtin-modules-3.1.0.tgz#aad97c15131eb76b65b50ef208e7584cd76a7484"
+  integrity sha1-qtl8FRMet2tltQ7yCOdYTNdqdIQ=
 
 cache-base@^1.0.1:
   version "1.0.1"
@@ -896,11 +903,6 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
-
-estree-walker@^0.5.2:
-  version "0.5.2"
-  resolved "http://registry.npm.taobao.org/estree-walker/download/estree-walker-0.5.2.tgz#d3850be7529c9580d815600b53126515e146dd39"
-  integrity sha1-04UL51KclYDYFWALUxJlFeFG3Tk=
 
 estree-walker@^0.6.0:
   version "0.6.0"
@@ -1226,9 +1228,9 @@ loose-envify@^1.0.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-magic-string@^0.25.1:
+magic-string@^0.25.2:
   version "0.25.2"
-  resolved "http://registry.npm.taobao.org/magic-string/download/magic-string-0.25.2.tgz#139c3a729515ec55e96e69e82a11fe890a293ad9"
+  resolved "https://registry.npm.taobao.org/magic-string/download/magic-string-0.25.2.tgz#139c3a729515ec55e96e69e82a11fe890a293ad9"
   integrity sha1-E5w6cpUV7FXpbmnoKhH+iQopOtk=
   dependencies:
     sourcemap-codec "^1.4.4"
@@ -1471,26 +1473,27 @@ rollup-plugin-babel@4.3.2:
     "@babel/helper-module-imports" "^7.0.0"
     rollup-pluginutils "^2.3.0"
 
-rollup-plugin-commonjs@9.2.1:
-  version "9.2.1"
-  resolved "http://registry.npm.taobao.org/rollup-plugin-commonjs/download/rollup-plugin-commonjs-9.2.1.tgz#bb151ca8fa23600c7a03e25f9f0a45b1ee922dac"
-  integrity sha1-uxUcqPojYAx6A+JfnwpFse6SLaw=
+rollup-plugin-commonjs@9.3.4:
+  version "9.3.4"
+  resolved "https://registry.npm.taobao.org/rollup-plugin-commonjs/download/rollup-plugin-commonjs-9.3.4.tgz#2b3dddbbbded83d45c36ff101cdd29e924fd23bc"
+  integrity sha1-Kz3du73tg9RcNv8QHN0p6ST9I7w=
   dependencies:
-    estree-walker "^0.5.2"
-    magic-string "^0.25.1"
+    estree-walker "^0.6.0"
+    magic-string "^0.25.2"
     resolve "^1.10.0"
-    rollup-pluginutils "^2.3.3"
+    rollup-pluginutils "^2.6.0"
 
-rollup-plugin-node-resolve@4.0.1:
-  version "4.0.1"
-  resolved "http://registry.npm.taobao.org/rollup-plugin-node-resolve/download/rollup-plugin-node-resolve-4.0.1.tgz#f95765d174e5daeef9ea6268566141f53aa9d422"
-  integrity sha1-+Vdl0XTl2u756mJoVmFB9Tqp1CI=
+rollup-plugin-node-resolve@4.2.3:
+  version "4.2.3"
+  resolved "https://registry.npm.taobao.org/rollup-plugin-node-resolve/download/rollup-plugin-node-resolve-4.2.3.tgz#638a373a54287d19fcc088fdd1c6fd8a58e4d90a"
+  integrity sha1-Y4o3OlQofRn8wIj90cb9iljk2Qo=
   dependencies:
-    builtin-modules "^3.0.0"
+    "@types/resolve" "0.0.8"
+    builtin-modules "^3.1.0"
     is-module "^1.0.0"
     resolve "^1.10.0"
 
-rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.3.3:
+rollup-pluginutils@^2.3.0:
   version "2.5.0"
   resolved "http://registry.npm.taobao.org/rollup-pluginutils/download/rollup-pluginutils-2.5.0.tgz#23be0f05ac3972ea7b08fc7870cb91fde5b23a09"
   integrity sha1-I74PBaw5cup7CPx4cMuR/eWyOgk=
@@ -1498,13 +1501,21 @@ rollup-pluginutils@^2.3.0, rollup-pluginutils@^2.3.3:
     estree-walker "^0.6.0"
     micromatch "^3.1.10"
 
-rollup@1.7.0:
-  version "1.7.0"
-  resolved "http://registry.npm.taobao.org/rollup/download/rollup-1.7.0.tgz#2f5063c0f344f2225d1077655dc54d105a512bb2"
-  integrity sha1-L1BjwPNE8iJdEHdlXcVNEFpRK7I=
+rollup-pluginutils@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.npm.taobao.org/rollup-pluginutils/download/rollup-pluginutils-2.6.0.tgz#203706edd43dfafeaebc355d7351119402fc83ad"
+  integrity sha1-IDcG7dQ9+v6uvDVdc1ERlAL8g60=
+  dependencies:
+    estree-walker "^0.6.0"
+    micromatch "^3.1.10"
+
+rollup@1.10.1:
+  version "1.10.1"
+  resolved "https://registry.npm.taobao.org/rollup/download/rollup-1.10.1.tgz#aeb763bbe98f707dc6496708db88372fa66687e7"
+  integrity sha1-rrdju+mPcH3GSWcI24g3L6Zmh+c=
   dependencies:
     "@types/estree" "0.0.39"
-    "@types/node" "^11.9.5"
+    "@types/node" "^11.13.5"
     acorn "^6.1.1"
 
 safe-buffer@~5.1.1:
@@ -1657,10 +1668,10 @@ trim-right@^1.0.1:
   resolved "http://registry.npm.taobao.org/trim-right/download/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
-typescript@3.3.4000:
-  version "3.3.4000"
-  resolved "http://registry.npm.taobao.org/typescript/download/typescript-3.3.4000.tgz#76b0f89cfdbf97827e1112d64f283f1151d6adf0"
-  integrity sha1-drD4nP2/l4J+ERLWTyg/EVHWrfA=
+typescript@3.4.5:
+  version "3.4.5"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.4.5.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
+  integrity sha1-LSYY0Qu1ZlcrjXqtUYDYQlfXCpk=
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
